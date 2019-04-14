@@ -135,5 +135,15 @@ public List findBooks() {
 Provides sensible defaults that automatically configure your favourite data access toolkit and APIs to make it easy to write your own 
 integrations.
 
+
+## Outlook
+* Reactive programming
+* Database access with GORM
+* Service discovery
+* Serverless applications
+* Distributed tracing
+* Cron jobs
+* Circuit breaker
+
 ## References
 [Micronaut Framework](https://micronaut.io)
