@@ -1,12 +1,16 @@
 package hello.world
 
-import io.micronaut.http.HttpStatus
 import io.micronaut.http.annotation.Controller
-import io.micronaut.http.annotation.Get
+import io.reactivex.Single
 
 @Controller("/hello")
-class HelloController {
+class HelloController : HelloApi {
 
-    @Get("/")
-    fun index(): HttpStatus = HttpStatus.OK
+    override fun index(name: String): HelloMessage =
+        HelloMessage("Hello $name!")
+
+
+    override fun reactive(name: String): Single<HelloMessage> =
+        Single.just(HelloMessage("Hello $name!"))
+
 }
