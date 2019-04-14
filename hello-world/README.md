@@ -47,7 +47,7 @@ Calling the API should gives us a response from the running application on the s
 url http://localhost:8080
 {"_links":{"self":{"href":"/","templated":false}},"message":"Page Not Found"}
 ```
-####creating components
+#### creating components
 The CLI tool can also be used to create components like controllers and clients along with their test classes. 
 ```
 mn create-controller HelloControler
